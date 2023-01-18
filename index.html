@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <script>
+      /*
         console.log('Hello World');
+        var prva, druga, treca;
+        prva = prompt();
+        druga = prompt();
+        treca = prompt();
+        cetvrta = +prva + (+druga) + (+treca);
+        console.log(cetvrta);
+
+        var randomBroj = prompt();
+        
+        if (+randomBroj > 10) {
+            console.log('Broj je veci od 10.');
+        }
+        else if (+randomBroj == 10) {
+            console.log('Broj je jednak 10.');
+        }
+        else {
+            console.log('Broj nije veci od 10.');
+        }
+
+        if ((+randomBroj)%3 == 0) {
+            console.log('Broj je djeljiv s 3.');
+        } else {
+            console.log('Broj nije djeljiv s 3.');
+        }
+        
+
+        function mojaFunkcija() {
+            console.log('Hello world!');
+        }
+
+        mojaFunkcija();
+
+        function zbroj(prviParametar, drugiParametar) {
+            console.log(prviParametar + drugiParametar);
+        }
+
+        zbroj(1, 2);
+
+        function dijeljenje(a, b) {
+            if (b == 0) {
+            console.log("Dijeljenje s 0 nije definirano.");
+            } else {
+            console.log(a / b);
+            }
+        }
+
+        dijeljenje(10, 2);
+        dijeljenje(10, 0);
+      */
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header"></div>
-    <div class="content"></div>
+    <div class="content">
+      <button id="first-button">Click me!</button>
+      <p id="p-names"></p>
+      <button id="second-button">Don't click me!</button>
+    </div>
     <div class="footer"></div>
-</body>
+  </body>
+  <script>
+    var firstButton = document.getElementById("first-button");
+    var pName = document.getElementById("p-names");
+    firstButton.addEventListener("click", function () {
+      pName.innerHTML = prompt();
+    });
+
+    var b = document.getElementById("second-button");
+    b.addEventListener("click", function () {
+      console.log("Hello, why did you click me?");
+    });
+  </script>
 </html>
