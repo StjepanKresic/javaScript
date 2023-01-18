@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.content {
+    height: calc(100vh - 200px);
+    width: 100%;
+    background-color: white;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: blueviolet;
+    bottom: 0;
+}
